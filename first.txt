@@ -1,3 +1,2 @@
 Bu bir django öğrenme projesi 
 
-s
