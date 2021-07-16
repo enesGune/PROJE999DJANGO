@@ -1,3 +1,4 @@
 Bu bir django öğrenme projesi 
 note sanal ile proje kurmak daha kullanışlıdır 
 projeyi startlamak için cmd ye django-admin startproject projectname
+server başlatmak için python manage.py run server
