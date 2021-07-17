@@ -29,7 +29,22 @@
     .STATIC_URL // css javascript gibi dosyaların sağlandığı kısmı
 
 
+--- build-companents ---
+    .ilk olarak bri admin oluşturmamız gerekmekte acılan sunucıda/admin yazdığım kısmı kullanabilmek için
+    .--python manage.py createsuperuser -- yazdıktan sonra önce kullanıcı adı daha sonra ise email ve passwordu giriyoruz
+    .kendi ilk uygulamaız için --python manage.py startapp name
+    .oluşturduğumuz model klasmründe models.py a gittik ve buarada veritabanı da ayarları kolonları yazdıktan sonra migrate edicez
+    .setting.py a gidip oaradaki app kısmına uygulamızın adını yazıyoruz
 
 
+--- models.py ---
+    .bu dosya veri tabanın yönetmemizi sağlar 
+    .models.TextField() bizim varcahar a eşittir
+    .yeni bir model yazdığımızda migrate etmek içn cmd ye --python manage.py makemigrations yazarız ardında migrate ederiz
+    .
 
+--- admin.py ---
+    .modelimport erdiyoruz bu sayede yazdığıız uygulamayı admin panaelinde görüyoruz
+    .--python manage.py shell-- bu komut bizim adminde yaptığımız işi cmd de yapmamıza olanak sağlar
+    .
 
