@@ -20,7 +20,11 @@ from .forms import ProductForms, RawProductForm
 #     return render(request, "products/products_create.html", context)
 
 def product_create_view(request):
-    form = ProductForms(request.POST or None)
+    initial_data = {
+        'title': 'this'
+    }
+
+    form = ProductForms(request.POST or None, initial=initial_data)
     if form.is_valid():
         form.save()
     context = {

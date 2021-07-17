@@ -21,10 +21,10 @@ class ProductForms(forms.ModelForm):
 
     def clean_title(self, *args, **kwargs):
         title = self.cleaned_data.get('title')
-        if "CFE" in title:
-            return title
-        else:
+        if "CFf" in title:
             raise forms.ValidationError("uyumlu değil")
+        else:
+            return title
 
 
 class RawProductForm(forms.ModelForm):
