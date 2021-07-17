@@ -1,4 +1,35 @@
-Bu bir django öğrenme projesi 
-note sanal ile proje kurmak daha kullanışlıdır 
-projeyi startlamak için cmd ye django-admin startproject projectname
-server başlatmak için python manage.py run server
+--- firstProjectkt ---
+
+    .Bu bir django öğrenme projesi 
+    .note sanal ile proje kurmak daha kullanışlıdır 
+    .projeyi startlamak için cmd ye --django-admin startproject projectname
+    .server başlatmak için --python manage.py run server
+    .veri tabanına erişmek ve değişikleri atamak için terminal --python manage.py migrate 
+
+
+
+--- setting.py ---
+
+    .BASE_DIR // bu ksımda projeni  bulunduğu dosya yoludur
+    .SECRET_KEY // bu ise her django projesinin jendi iinde bir anahtarı bulunur
+    .DEBUG // hata ayıklama modu standart True dur
+    .ALLOWED_HOSTS // 
+    .INSTALLED_APPS // projemizde yüklü olan uygulamar
+    .MIDDLEWARE // ara katman güvenliğin ve isteklerin yöneltiği katman dır
+    .ROOT_URLCONF // url yönlendirme kısmı
+    .TEMPLATES // django HTML şablon kısmı
+    .WSGI_APPLICATION // sunucuda çalışma kısmı
+    .DATABASES // veri tabanın yönetildiği kısmı
+    .AUTH_PASSWORD_VALIDATORS // şifrenin soğrulama ve düzenleme kısmı
+    .
+    .
+    .
+    .
+    .
+    .STATIC_URL // css javascript gibi dosyaların sağlandığı kısmı
+
+
+
+
+
+
