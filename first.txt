@@ -51,4 +51,30 @@
 --- new-models-field ---
     .modelleri yeniden başlatacağımız ksım
 
+--- default-homepage---custom-homepage ---
+    ...views.py... 
+        .bu kısım kendi sayfalarımız oluşturduğumuz alan 
 
+--- urls.py ---
+    .sayfamızın urlelerini düzenlediğimiz kısım
+    .urlpatterns = [
+    path('', views.home_view, name='home'),
+    path('admin/', admin.site.urls),
+    ] bu kısımda bir oute yaptık 
+    ... route-request ...
+        path('home/', views.home_view, name='home') bu şekilde route edilebilir
+
+--- views.py ---
+    .bu kısm sayfaları oluşturduğumuz ve request ile sasyafadan etkiledşim aldığımız kısmı
+    .bu rada kişi doğrulama yapılabilir
+    .request,*args**kwargs bizim sayfa etkileşme kodlarımız
+
+
+--- django-templates --- 
+    .bu sayfa şablonları ksımı
+    .homepage kısmında render kullanarak yazdığımız html sayfasını geri gönderdik
+
+--- templates ---
+    .bu klasor bizim sayfa tasarımlarımızn yani html lerin bulunduğu kısım 
+    .kurduktan sonra ayarlardan tamlete de değiiklik yapmamız gerecek
+    . {{request.user}} bu bizim djangoda kullandığımız bir methot

@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# import edilen aslında bir pages olmalı
+from customers.views import home_view, about_view, home_page
 
 urlpatterns = [
+    path('', home_view, name='home'),
+    path('about/', about_view),
+    path('home/', home_page),
     path('admin/', admin.site.urls),
 ]
