@@ -48,3 +48,7 @@
     .--python manage.py shell-- bu komut bizim adminde yaptığımız işi cmd de yapmamıza olanak sağlar
     .
 
+--- new-models-field ---
+    .modelleri yeniden başlatacağımız ksım
+
+
