@@ -10,7 +10,12 @@ def home_view(request, *args, **kwargs):
 
 
 def about_view(request, *args, **kwargs):
-    return HttpResponse("<h1>About Page</h1>")
+    my_contex = {
+        "my_title": "it is coll",
+        "my_number": 12345,
+        "my_list": [1234, 466, 5646, 44]
+    }
+    return render(request, "about.html", my_contex)
 
 
 def home_page(request, *args, **kwargs):

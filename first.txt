@@ -78,3 +78,12 @@
     .bu klasor bizim sayfa tasarımlarımızn yani html lerin bulunduğu kısım 
     .kurduktan sonra ayarlardan tamlete de değiiklik yapmamız gerecek
     . {{request.user}} bu bizim djangoda kullandığımız bir methot
+    .{{request.user.is_authenticated}} kullanıcı login olup olmadığını sorduk
+    .    {% block content %}
+        replace me
+    {% endblock %}
+    böylece bir şablon yapılandırdık ve exdent edeert aynı şablonu sadece içeri değiştirerek kullnabilir hale getirdik
+    .{% include 'navbar.html' %} bu şekilde navbar gibi öğereli alabiliypruz
+    .viewde abouttaki gibi dataları göstermeye çalışıcaz
+    .for ile aboutta listemizinnelemenalarını tek tek döndük {{forloop.counter}} bu ise bir listeyi numaralandırı
+    
