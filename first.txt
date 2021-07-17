@@ -101,3 +101,10 @@
 
     .bu işlem için products kullanıcaz
     .viev de context oluşturarak oebjekt keyine obj atadık ve onu içerde object.title şeklinde kullanduık
+
+--- forms.py ---
+
+    .formlar için product klasöründeyiz
+    .bu kısmda otomatik formlar gelmekte csfr token ekledik yani her formada yeni bir token üretmekte
+    .şimdi raw form kısmı na geldik
+    .clean title kısmında validasyon gerçekleştirdik
