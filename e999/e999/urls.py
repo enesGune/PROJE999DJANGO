@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 # import edilen aslında bir pages olmalı
 from customers.views import home_view, about_view, home_page
-
+from products.views import product_view_detail
 urlpatterns = [
     path('', home_view, name='home'),
     path('about/', about_view),
     path('home/', home_page),
+    path('product/', product_view_detail),
     path('admin/', admin.site.urls),
+
 ]
