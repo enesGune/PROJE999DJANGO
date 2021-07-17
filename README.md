@@ -1,4 +1,3 @@
-# PROJE999DJANGO
 --- firstProjectkt ---
 
     .Bu bir django öğrenme projesi 
@@ -31,6 +30,7 @@
 
 
 --- build-companents ---
+
     .ilk olarak bri admin oluşturmamız gerekmekte acılan sunucıda/admin yazdığım kısmı kullanabilmek için
     .--python manage.py createsuperuser -- yazdıktan sonra önce kullanıcı adı daha sonra ise email ve passwordu giriyoruz
     .kendi ilk uygulamaız için --python manage.py startapp name
@@ -39,24 +39,29 @@
 
 
 --- models.py ---
+
     .bu dosya veri tabanın yönetmemizi sağlar 
     .models.TextField() bizim varcahar a eşittir
     .yeni bir model yazdığımızda migrate etmek içn cmd ye --python manage.py makemigrations yazarız ardında migrate ederiz
     .
 
 --- admin.py ---
+
     .modelimport erdiyoruz bu sayede yazdığıız uygulamayı admin panaelinde görüyoruz
     .--python manage.py shell-- bu komut bizim adminde yaptığımız işi cmd de yapmamıza olanak sağlar
     .
 
 --- new-models-field ---
+
     .modelleri yeniden başlatacağımız ksım
 
 --- default-homepage---custom-homepage ---
+
     ...views.py... 
         .bu kısım kendi sayfalarımız oluşturduğumuz alan 
 
 --- urls.py ---
+
     .sayfamızın urlelerini düzenlediğimiz kısım
     .urlpatterns = [
     path('', views.home_view, name='home'),
@@ -66,16 +71,19 @@
         path('home/', views.home_view, name='home') bu şekilde route edilebilir
 
 --- views.py ---
+
     .bu kısm sayfaları oluşturduğumuz ve request ile sasyafadan etkiledşim aldığımız kısmı
     .bu rada kişi doğrulama yapılabilir
     .request,*args**kwargs bizim sayfa etkileşme kodlarımız
 
 
 --- django-templates --- 
+
     .bu sayfa şablonları ksımı
     .homepage kısmında render kullanarak yazdığımız html sayfasını geri gönderdik
 
 --- templates ---
+
     .bu klasor bizim sayfa tasarımlarımızn yani html lerin bulunduğu kısım 
     .kurduktan sonra ayarlardan tamlete de değiiklik yapmamız gerecek
     . {{request.user}} bu bizim djangoda kullandığımız bir methot
@@ -88,3 +96,8 @@
     .viewde abouttaki gibi dataları göstermeye çalışıcaz
     .for ile aboutta listemizinnelemenalarını tek tek döndük {{forloop.counter}} bu ise bir listeyi numaralandırı
     .abouttta yine basit bir if else bloğu kullandık
+
+--- database-veri-çekme ---
+
+    .bu işlem için products kullanıcaz
+    .viev de context oluşturarak oebjekt keyine obj atadık ve onu içerde object.title şeklinde kullanduık
