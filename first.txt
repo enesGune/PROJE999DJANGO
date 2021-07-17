@@ -86,4 +86,4 @@
     .{% include 'navbar.html' %} bu şekilde navbar gibi öğereli alabiliypruz
     .viewde abouttaki gibi dataları göstermeye çalışıcaz
     .for ile aboutta listemizinnelemenalarını tek tek döndük {{forloop.counter}} bu ise bir listeyi numaralandırı
-    
+    .abouttta yine basit bir if else bloğu kullandık

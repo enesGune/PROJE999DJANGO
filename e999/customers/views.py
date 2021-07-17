@@ -13,7 +13,7 @@ def about_view(request, *args, **kwargs):
     my_contex = {
         "my_title": "it is coll",
         "my_number": 12345,
-        "my_list": [1234, 466, 5646, 44]
+        "my_list": [1234, 466, 5646, 44, 312, 412]
     }
     return render(request, "about.html", my_contex)
 

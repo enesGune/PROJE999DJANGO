@@ -6,8 +6,14 @@
         {{my_title}}, {{my_number}}
         <ul>
             {% for item in my_list %}
-                <li>{{item}}</li>
+                {% if item == 312 %}
+                    <li>{{forloop.counter}}-{{item}}</li>
+                {% else %}
+                    <li>{{forloop.counter}}-{{item}}</li>
+                {% endif %}
+
             {% endfor %}
+
         </ul>
         {{my_list}}
     </p>
