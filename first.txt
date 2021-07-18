@@ -107,4 +107,4 @@
     .formlar için product klasöründeyiz
     .bu kısmda otomatik formlar gelmekte csfr token ekledik yani her formada yeni bir token üretmekte
     .şimdi raw form kısmı na geldik
-    .clean title kısmında validasyon gerçekleştirdik
+    .clean title kısmında validasyon gerçekleştirdik https://www.youtube.com/watch?v=F5mRW0jo-U4 2:54
