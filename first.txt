@@ -108,3 +108,7 @@
     .bu kısmda otomatik formlar gelmekte csfr token ekledik yani her formada yeni bir token üretmekte
     .şimdi raw form kısmı na geldik
     .clean title kısmında validasyon gerçekleştirdik https://www.youtube.com/watch?v=F5mRW0jo-U4 2:54
+
+--- login ---
+
+    .https://www.youtube.com/watch?v=x8yxM7rCvEc 29:15
